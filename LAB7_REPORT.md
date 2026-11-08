@@ -87,11 +87,21 @@ was available locally and was run by the failing tests before it was changed.
 
 ## Screenshot evidence
 
-The original buggy behavior and final passing test/application output were
-executed in the terminal during this work. This session does not provide a
-desktop or terminal screenshot-capture facility, so no screenshot images were
-created; `screenshots/README.md` records that limitation. No screenshots or
-test outputs have been fabricated.
+Four screenshots were captured from the visible Windows Terminal window,
+cropped to the terminal window, and saved in `screenshots/`:
+
+1. `01_original_processor_crash.png` — the original committed processor run
+   with an empty ISBN, showing the `IndexError`.
+2. `02_initial_hypothesis_failures.png` — the original processor tested
+   against the initial 25-test Hypothesis baseline, showing **19 failed and
+   6 passed** (five later-added boundary cases deselected).
+3. `03_fixed_processor_execution.png` — the completed processor run with
+   sample ISBN, age/lifespan, and condition inputs.
+4. `04_final_pytest_success.png` — the complete repository test run, showing
+   **42 passed**.
+
+The images are genuine screen captures of terminal output. They are also
+embedded in `LAB7_REPORT.pdf` alongside the findings and test summary.
 
 ## Limitations
 
@@ -99,5 +109,3 @@ test outputs have been fabricated.
   verify the ISBN-10 checksum.
 - The Lab 7 handout referred to by the repository README was not included in
   the repository.
-- Genuine screenshot images could not be captured in this execution
-  environment.

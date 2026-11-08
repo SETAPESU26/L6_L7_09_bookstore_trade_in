@@ -27,8 +27,9 @@ tests.
 | `Lab 7/test_processor.py` | Hypothesis properties and edge-case tests |
 | `Lab 7/README.md` | Lab 7 instructions |
 | `LAB7_REPORT.md` | Fuzz-testing findings and results |
+| `LAB7_REPORT.pdf` | Fuzz-testing report with genuine terminal screenshots |
 | `requirements-dev.txt` | Test dependencies |
-| `screenshots/` | Screenshot evidence status |
+| `screenshots/` | Original failure, baseline tests, fixed run, final tests |
 
 ## Install
 
@@ -94,9 +95,9 @@ status, and scanner calibration.
 
 The expanded pre-fix Lab 7 suite recorded **19 failures and 6 passes**. After
 the fixes, Lab 7 passed **30 tests**. Lab 6 passed **12 tests**, with **100%
-line and branch coverage** for `bookstore_trade_in.py`. The complete suite and
-application were also run locally; detailed results and screenshot
-limitations are in [LAB7_REPORT.md](./LAB7_REPORT.md).
+line and branch coverage** for `bookstore_trade_in.py`. The complete suite and application were also run locally; detailed results
+and screenshot evidence are in [LAB7_REPORT.md](./LAB7_REPORT.md) and
+[LAB7_REPORT.pdf](./LAB7_REPORT.pdf).
 
 ## Scope and limitations
 
