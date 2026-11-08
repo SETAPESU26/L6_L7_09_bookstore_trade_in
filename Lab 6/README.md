@@ -11,8 +11,18 @@ A small Python module that evaluates used book trade-in values across formats, w
 | File | Description |
 |------|-------------|
 | `bookstore_trade_in.py` | The module under test |
-| `test_bookstore_trade.py` | Starter test file |
+| `test_bookstore_trade.py` | Functional and branch-coverage tests |
 
 Keep all your Lab 6 work in this `LAB6` folder. Lab 7 will be added to this repo later.
 
-Refer to the lab handout for instructions.
+From this folder, install the repository's development dependencies and run
+the tests with branch coverage:
+
+```powershell
+python -m pip install -r ..\requirements-dev.txt
+python -m pytest -v --cov=bookstore_trade_in --cov-branch --cov-report=term-missing
+```
+
+The test suite covers the buyback payout/status branches and scanner
+calibration outcomes. Refer to the lab handout for the original assignment
+instructions.
